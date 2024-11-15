@@ -1,0 +1,26 @@
+{
+    "name": "glitter/k3cloud",
+    "description": "This is KingDee PHP SDK",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Glitter\\K3cloud\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Glitter\\K3cloud\\Providers\\K3CloudServiceProvider"
+            ],
+            "aliases": {
+                "K3Cloud": "Glitter\\K3cloud\\Facades\\K3Cloud"
+            }
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
